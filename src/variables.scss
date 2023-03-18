@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+$yellow: #ffdc1c;
+$blue: #004af6;
+$black: #353334;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+
+.services-main-wrapper:nth-child(odd) {
+    .row {
+        div.col-6:nth-child(odd) {
+            order: 1;
+        }
+    }
+}

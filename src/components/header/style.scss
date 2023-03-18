@@ -1,0 +1,46 @@
+@import "../../variables.scss";
+
+.header-wrapper {
+    background-color: $yellow;
+    a {
+        text-decoration: underline;
+        text-transform: capitalize;
+        font-weight: 600;
+        &:hover {
+            color: $blue;
+            svg {
+                display: inline-block;
+            }
+        }
+        svg {
+            display: none;
+        }
+    }
+}
+.nav-wrapper {
+    background-color: transparent;
+    font-weight: 500;
+    .col-6 {
+        ul {
+            li {
+                padding-top: 19px;
+            }
+        }
+    }
+    .col-3 {
+        a {
+            display: block;
+            width: 200px;
+            color: $blue;
+            background-color: $yellow;
+            &:hover {
+                svg {
+                    display: inline-block;
+                }
+            }
+            svg {
+                display: none;
+            }
+        }
+    }
+}

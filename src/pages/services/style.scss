@@ -1,0 +1,45 @@
+@import "../../variables.scss";
+
+
+.hero-section-wrapper {
+    h2 {
+        color: #ffab00;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    h1 {
+        font-size: 56px;
+        line-height: 62px;
+        font-weight: 400;
+    }
+    p {
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: 600;
+        width: 57%;
+    }
+}
+
+.services-main-wrapper {
+    background-color: #F4F4F4;
+    .col-6.second {
+        img {
+            width: 15%;
+        }
+        h3 {
+            font-weight: 600;
+            font-size: 34px;
+            line-height: 48px;
+        }
+        p.first {
+            padding: 20px;
+            background-color: #E9EBFF;
+        }
+    }
+}
+
+
+.blue {
+    color: $blue;
+}
