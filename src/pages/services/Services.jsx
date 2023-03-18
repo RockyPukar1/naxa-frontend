@@ -9,12 +9,12 @@ const Services = () => {
 
   useEffect(() => {
     dispatch(getServicesFetch());
-  }, [dispatch, services]);
+  }, [dispatch]);
 
   return (
     <>
-      <section className="hero-section-wrapper py-5">
-        <div className="container">
+      <section className="hero-section-wrapper py-5 mb-5">
+        <div className="container hero-main">
           <div className="row">
             <div className="col-12">
               <h2 className="mb-4">SERVICES</h2>
@@ -36,10 +36,21 @@ const Services = () => {
               </p>
             </div>
           </div>
+          <div className="section-navigator">
+            <div className="d-flex text-center justify-content-center">
+              <div className="col-1"><a href="#5">Frontier Technology</a></div>
+              <div className="col-2"><a href="#6">Training & Capacity building</a></div>
+              <div className="col-1"><a href="#4">GIS Mapping & Analysis</a></div>
+              <div className="col-2"><a href="#2">Data Collection & Visualization</a></div>
+              <div className="col-2"><a href="#1">Creative Graphic Design</a></div>
+              <div className="col-2"><a href="#8">ICT & Digital Development Research</a></div>
+              <div className="col-2"><a href="#3">Software & Apps Development</a></div>
+            </div>
+          </div>
         </div>
       </section>
       {services.map((service) => (
-        <section key={service.id} className="services-main-wrapper py-5">
+        <section key={service.id} id={service.id} className="services-main-wrapper py-5">
           <div className="container">
             <div className="row d-flex align-items-center">
               <div className="col-6 first text-center">

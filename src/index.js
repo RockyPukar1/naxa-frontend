@@ -22,7 +22,9 @@ const store = configureStore({
 saga.run(servicesSaga);
 root.render(
   <Provider store={store}>
-    <App />
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
   </Provider>
 );
 
